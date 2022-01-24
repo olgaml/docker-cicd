@@ -14,7 +14,7 @@ job('NodeJS Docker example') {
         dockerBuildAndPublish {
             repositoryName('olgaml/development|dslExam')
             tag('${GIT_REVISION,length=9}')
-            registryCredentials('olga-hub')
+            registryCredentials('adbde24d-2b26-4be6-ae78-072aeb5d3514')
             buildContext('./basics/')
             forcePull(false)
             forceTag(false)
