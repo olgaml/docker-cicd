@@ -12,7 +12,7 @@ job('NodeJS Docker example') {
     
     steps {
         dockerBuildAndPublish {
-            repositoryName('olgaml/development|dslExam')
+            repositoryName('olgaml/development')
             tag('${GIT_REVISION,length=9}')
             registryCredentials('adbde24d-2b26-4be6-ae78-072aeb5d3514')
             buildContext('./basics/')
