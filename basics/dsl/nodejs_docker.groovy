@@ -14,7 +14,7 @@ job('NodeJS Docker example') {
         dockerBuildAndPublish {
             repositoryName('olgaml/development')
             tag('dslExam2')
-            registryCredentials('adbde24d-2b26-4be6-ae78-072aeb5d3514')
+            registryCredentials('olgascred')
             buildContext('./basics/')
             forcePull(false)
             forceTag(false)
