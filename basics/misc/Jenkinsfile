@@ -25,8 +25,7 @@ node {
      sh label: '', script: """docker rm docker_test || true
       docker run --rm -tid --name docker_test -p 3000 olgaml/docker-nodejs-demo:${commit_id}
       docker kill docker_test
-      
-      """
+            """
       
      }
    }
